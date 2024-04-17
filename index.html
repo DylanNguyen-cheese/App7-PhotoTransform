@@ -150,15 +150,15 @@
 
       <canvas id="myNewCanvas" width=600 height=500 style="border:1px solid #d3d3d3;"></canvas>
       <script> /* This script initiates the cavas and puts the text on the canvas "myCanvas" */
-        var canvas = document.getElementById('myCanvas');
-        var context = canvas.getContext("2d");
-        context.font = '20pt Calibri';
-        context.fillStyle = "black";
+        var canvas = document.getElementById('myCanvas'); //gets original canvas
+        var context = canvas.getContext("2d"); //gets canvas context
+        context.font = '20pt Calibri'; //type of font//
+        context.fillStyle = "black"; //color of font//
         context.fillText("Original image will go here", 10, 20);
-        var myNewCanvas = document.getElementById('myNewCanvas');
-        var myNewContext2 = myNewCanvas.getContext("2d");
-        myNewCanvas.font = '20pt Calibri';
-        myNewCanvas.fillStyle = "black";
+        var myNewCanvas = document.getElementById('myNewCanvas'); //gets new canvas
+        var myNewContext2 = myNewCanvas.getContext("2d"); //gets canvas context
+        myNewCanvas.font = '20pt Calibri'; //type of font//
+        myNewCanvas.fillStyle = "black"; //color of font//
         myNewCanvas.fillText("The blue image will go here", 20, 20);
       </script>
 
